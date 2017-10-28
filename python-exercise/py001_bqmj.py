@@ -3,7 +3,7 @@
 # @Time    : 17/10/28 上午11:24
 # @Author  : Aries
 # @Site    : 
-# @File    : py001-bqmj.py
+# @File    : py001_bqmj.py
 # @Software: PyCharm
 # 百钱买鸡问题
 
