@@ -23,4 +23,18 @@ print bool(False)  # False
 print bool(None)  # False
 print bool([])  # False
 print bool(())  # False
+print bool({})  # False
 
+
+def myFunction():
+    print "myFunction"
+
+
+print bool(myFunction()) # False
+
+
+class myClass:
+    print "my class"
+
+
+print bool(myClass)
