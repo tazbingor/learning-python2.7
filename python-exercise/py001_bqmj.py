@@ -18,3 +18,9 @@ if __name__ == '__main__':
                                                 cock + hen + chick == 100 and \
                                 cock != 0 and hen != 0 and chick != 0:
                     print "公鸡买:%s只, 母鸡买:%s只, 小鸡买:%s只;" % (str(cock), str(hen), str(chick))
+
+'''
+这个问题涉及到了一个最初的解决问题的思路
+也就是,穷举法
+就像筛子一样,把所有的可能性一一列举出来,并同时进行检测,直到找出最优解
+'''
