@@ -15,11 +15,12 @@
 12345
 123456
 .......
+输如你想得到的行数
 '''
 
-num = 7
+num = raw_input("请输入你想要的行数\n")
 item = 1
-while item < num:
+while item < int(num):
     item += 1
     col = 1
     while col < item:
