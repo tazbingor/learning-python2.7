@@ -27,6 +27,6 @@ print e is f  # True
 
 # 都为True,原因很简单,首先数字类型是属于不可改变的类型,
 # 所以当一个或者多个数字变量的值相同,那么在实例化时,这些变量会指向同一块内存区域 使用id()即可证明
-print id(a) == id(b) # True
-print id(c) == id(d) # True
-print id(e) == id(f) # True
+print id(a) == id(b)  # True
+print id(c) == id(d)  # True
+print id(e) == id(f)  # True
