@@ -17,7 +17,7 @@
 '''
 
 col = 1
-while col < 7:
+while col < 6:
     col += 1
     item = 1
     while item < col:
