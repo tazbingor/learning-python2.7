@@ -3,7 +3,7 @@
 # @Time    : 17/11/7 下午4:44
 # @Author  : Aries
 # @Site    : 
-# @File    : py023_number_triangle_02.py.py
+# @File    : py023_number_triangle_02.py
 # @Software: PyCharm
 '''
 数字三角形
