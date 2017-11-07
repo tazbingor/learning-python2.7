@@ -16,13 +16,13 @@
 1 2 3 4 5
 '''
 
-item = 1
-while item < 6:
-    item += 1
-    col = 1
-    while col < item:
-        print col,
-        col += 1
+col = 1
+while col < 7:
+    col += 1
+    item = 1
+    while item < col:
+        print item,
+        item += 1
     print
 
 print
