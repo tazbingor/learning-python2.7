@@ -8,4 +8,6 @@
 '''
 输出菱形
 '''
-
+result = '' + str(1)
+print result
+print type(result)
