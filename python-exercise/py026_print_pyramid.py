@@ -15,7 +15,11 @@
      *******
     *********
 '''
-user_number = int(raw_input("请输入15以内的数字:\n"))
+
+'''
+方法一
+'''
+user_number = int(raw_input("方法二,请输入15以内的数字:\n"))
 item = 1
 while item <= user_number:
     num = user_number
@@ -34,3 +38,18 @@ while item <= user_number:
 
     item += 1
     print
+
+print "-" * 50
+
+'''
+方法二
+'''
+star = 1
+num = int(raw_input("方法一,请输入15以内的数\n"))
+col = num
+i = 0
+while i < num:  # 上金字塔
+    print ' ' * col, '*' * star
+    col -= 1
+    star += 2
+    i += 1
