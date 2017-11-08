@@ -16,15 +16,29 @@
 
 '''
 
+# 求位数之和
+def getStrSum(strArr):
+    result = 0
+    number = int(strArr)
 
+    while number != 0:
+        result += number % 10
+        number //= 10
+    return str(number)
+
+
+# 返回打印每行结果
 def strResult(arr, col, item):
-    temp = " "
-    arr.append(col)
+    temp = ""
+    arr += str(col)
     if item - col == 1:
-        temp = str(col) + "=" + str(sum(arr))
+        temp = str(col) + "=" + arr
     else:
         temp = str(col) + "+"
     return temp
+
+
+
 
 
 num = int(raw_input("请输入数字\n"))
@@ -32,8 +46,8 @@ item = 1
 while item <= num:
     item += 1
     col = 1
-    arr = []
+    strArr = ''
     while col < item:
-        print strResult(arr, col, item),
+        print strResult(strArr, col, item),
         col += 1
     print

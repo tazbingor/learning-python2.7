@@ -19,8 +19,12 @@
 print '\t1   2   3   4   5   6   7   8   9'
 print '-' * 40
 
-for i in range(1, 10, 1):
+i = 1
+while i < 11:
     print str(i) + '|',
-    for j in range(1, 10, 1):
+    j = 1
+    while j < 11:
         print str(i * j) + "\t",
+        j += 1
+    i += 1
     print
