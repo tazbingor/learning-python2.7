@@ -40,8 +40,7 @@ def strResult(total, col, item):
 
 num = int(raw_input("请输入数字\n"))
 item = 1
-strArr = ''
-total = 0
+total = 0  # 合计完全数
 while item <= num:
     total += item
     item += 1
