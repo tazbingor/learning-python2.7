@@ -10,9 +10,11 @@
 有多少个三位整数能被17整除?将之输出。
 '''
 
-arr = []
-for item in range(100, 1000, 1):
+count = 1  # 计数器
+item = 0
+while item < 1001:
     if item % 17 == 0:
-        arr.append(item)
-print arr
-print '有%s个三位数能被17整除' % str(len(arr))
+        print item
+        count += 1
+    item += 1
+print '有%s个三位数可以被17整除' % str(count)
