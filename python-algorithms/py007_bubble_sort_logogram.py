@@ -7,7 +7,6 @@
 # @Software: PyCharm
 '''
 冒泡排序简写
-
 '''
 arr = [65, 29, 6, 54, 62, 88, 66, 108]
 count = len(arr)
