@@ -15,9 +15,9 @@ i = 0
 
 while i < count - 1:
     j = 0
-
-    while arr[j] > arr[j + 1]:  # 数组中,前一位大于后一位,则进行交换
-        arr[j], arr[j + 1] = arr[j + 1], arr[j]
+    while j < count - 1 - i:
+        if arr[j] > arr[j + 1]:  # 数组中,前一位大于后一位,则进行交换
+            arr[j], arr[j + 1] = arr[j + 1], arr[j]
         j += 1
     i += 1
 print arr
