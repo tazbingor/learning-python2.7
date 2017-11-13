@@ -3,7 +3,7 @@
 # @Time    : 17/11/13 下午3:11
 # @Author  : Aries
 # @Site    : 
-# @File    : py26_unicode_uniFile.py
+# @File    : py026_unicode_uniFile.py
 # @Software: PyCharm
 '''
 python unicode
