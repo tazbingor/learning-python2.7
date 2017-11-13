@@ -23,3 +23,15 @@ print type(string.lowercase)
 print string.whitespace
 print len(string.whitespace)  # 长度为6
 print type(string.whitespace)
+
+# 首字母大写
+str1 = 'hello'
+print str1.capitalize()  # Hello
+print
+# 返回一个居中的字符串,字符前后填充总数为width的空格,也可自定义填充其他字符
+str2 = 'rich'
+str2.center(4, '*')
+
+print str2
+print len(str2)
+print
