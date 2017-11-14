@@ -28,10 +28,20 @@ print 2 in num_tuple  # True
 num_tuple = (2, 4, 6, 8)
 
 # min() and max()
-print min(num_tuple) # 2
-print max(num_tuple) # 8
+print min(num_tuple)  # 2
+print max(num_tuple)  # 8
 
 # len
-print len(num_tuple) # 4
+print len(num_tuple)  # 4
 
+print "-" * 50
+# 默认集合类型
+print 1, 4, 'w', 9.0
+x, y, z = 1, 2, 3
+print x, y, z
 
+# 单元素元组
+str_tuple = ('A')
+print type(str_tuple)  # <type 'str'>
+num_tuple = (99)
+print type(num_tuple)  # <type 'int'>
