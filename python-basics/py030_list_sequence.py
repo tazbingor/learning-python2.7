@@ -49,3 +49,10 @@ num_list2 = [3, 4]
 print zip(num_list1, num_list2)  # [(1, 3), (2, 4)]
 num_list3 = [3, 4, 5]
 print zip(num_list1, num_list3)  # [(1, 3), (2, 4)]
+
+# sum()
+# 列表内元素之和
+print sum(num_list1)  # 3
+print sum(num_list2)  # 7
+# str_list2 = ['1', '2', '3', '4']
+# print sum(str_list2)
