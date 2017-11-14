@@ -18,6 +18,7 @@ list 内建函数 append 追加 和 extend 扩展
 2. append 添加任意obj, 追加新的元素,将obj以一个整体的形式添加到list末尾,并占一个元素位(类似于打包的效果)
 3. extend 添加任意obj, 扩展新的元素,将obj中的一个或者是多个元素逐一添加至原有list当中
 
+ps: py2.2之前,extend只能添加列表
 '''
 
 test_list1 = ['A', 'B', 'C', 'D']
