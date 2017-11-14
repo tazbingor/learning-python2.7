@@ -56,3 +56,13 @@ print sum(num_list1)  # 3
 print sum(num_list2)  # 7
 # str_list2 = ['1', '2', '3', '4']
 # print sum(str_list2)
+print
+
+# list() 与 tuple()
+test_list1 = [1, 2, 3, 4]
+test_tuple = tuple(test_list1)
+print test_tuple  # (1, 2, 3, 4)
+print test_tuple == tuple(test_list1)  # True
+print
+print test_list1 == list(test_tuple)  # True
+print list(test_tuple)  # [1, 2, 3, 4]
