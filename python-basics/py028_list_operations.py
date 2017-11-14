@@ -56,4 +56,6 @@ print str_list[0:3]  # ['A', 'B', 'C']
 print str_list[:4]  # ['A', 'B', 'C', 'D']
 print
 
-
+# 重复操作符
+print num_list * 2  # 并不是列表内的乘法运算,而是将原有的列表元素赋值了一份,并重新添加到列表中
+print num_list * 3
