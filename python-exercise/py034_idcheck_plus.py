@@ -10,7 +10,7 @@
 '''
 
 import string
-import keyword
+import keyword  # 关键字模块
 
 alphas = string.letters + '_'
 nums = string.digits
