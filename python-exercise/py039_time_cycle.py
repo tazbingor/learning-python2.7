@@ -19,3 +19,4 @@ def getTimeCycle(min):
 
 user_input = int(raw_input('请输入分钟:\n'))
 print getTimeCycle(user_input)
+
