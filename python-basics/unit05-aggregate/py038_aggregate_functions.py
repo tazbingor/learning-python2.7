@@ -9,6 +9,8 @@
 集合类型内建函数
 '''
 
+import copy
+
 dict1 = {
     2: 'two',
     4: 'four',
@@ -37,3 +39,16 @@ print dict([['x', '1'], ['y', '2']])  # {'y': '2', 'x': '1'}
 print dict([('xy'[i - 1], i) for i in range(1, 3)])  # {'y': 2, 'x': 1}
 print  '-' * 50
 
+# 修改字典
+dict3 = {'x': 1, 'y': 2}
+dict3 = dict(x=3, y=4)
+print dict3  # {'y': 4, 'x': 3}
+# 复制字典
+dict4 = dict(**dict3)
+print dict4  # {'y': 4, 'x': 3}
+# 使用copy() 浅拷贝
+dict5 = dict4.copy()
+print dict5  # {'y': 4, 'x': 3}
+# 深拷贝
+dict6 = copy.deepcopy(dict5)
+print dict6 # {'y': 4, 'x': 3}
