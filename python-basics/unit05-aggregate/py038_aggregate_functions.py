@@ -52,3 +52,5 @@ print dict5  # {'y': 4, 'x': 3}
 # 深拷贝
 dict6 = copy.deepcopy(dict5)
 print dict6 # {'y': 4, 'x': 3}
+
+
