@@ -46,6 +46,6 @@ print s  # set(['a', 'b', 'h', 'j', 'o', 'n', 'p', 't', 'rich', 'y'])
 print '-' * 50
 
 # frozenset()集合不能被修改
-print t
-t.add('a')
-print t
+# print t
+# t.add('a')
+# print t
