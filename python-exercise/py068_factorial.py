@@ -10,7 +10,6 @@
 N的阶乘简写为N!. N! == factorial(N) == 1*2*3...(N-2)*(N-1)*N,所以, 4! == 1 * 2 * 3 * 4,写一个函数,指定N,返回N!的值.
 '''
 
-
 def factorial(number):
     if number == 0 and number == 1:
         return 1
