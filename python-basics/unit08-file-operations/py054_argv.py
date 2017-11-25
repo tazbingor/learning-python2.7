@@ -8,3 +8,8 @@
 '''
 命令行参数
 '''
+import sys
+
+print len(sys.argv) # 1
+print str(sys.argv)
+# print
