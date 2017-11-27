@@ -12,3 +12,8 @@ os 和os.path
 '''
 
 import os
+
+for tmpdir in ('/tmp',r'/temp'):
+    if os.path.isdir(tmpdir):
+        break
+        #
