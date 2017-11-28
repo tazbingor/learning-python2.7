@@ -3,7 +3,7 @@
 # @Time    : 17/11/28 下午9:04
 # @Author  : Aries
 # @Site    : 
-# @File    : py073_File_Screening.py
+# @File    : py073_file_screening.py
 # @Software: PyCharm
 '''
 9-1.文件过滤
