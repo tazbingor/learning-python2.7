@@ -11,9 +11,15 @@
 '''
 
 
-def fileReference(num, file1):
-    if isinstance(num, 'int') and isinstance(file1, 'file'):
+def fileReference(num, filePath):
+    if not isinstance(num, int) and not isinstance(filePath, str):
         return '请输入正确的参数类型'
+    file1 = open(filePath, 'r')
+
+    for count in range(num):
+        print file1.readline()
+
+    file1.close()
 
 
-    pass
+fileReference(7, 'py073_file_screening.py')
