@@ -12,7 +12,9 @@
 '''
 
 
+
 def filePrint(filePath):
+
     file1 = open(filePath, 'r')
     for line in file1:
         # if line[0] != '#':
@@ -28,3 +30,20 @@ def filePrint(filePath):
 
 
 filePrint('py072_bit_manipulation.py')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
