@@ -11,8 +11,7 @@
 '''
 
 
-def fileReader():
-    filePath = raw_input('请输入一个文件名或者文件地址:\n')
+def fileReader(filePath):
     file1 = open(filePath, 'r')
     line = 1
     for eachLine in file1.readlines():
@@ -24,4 +23,5 @@ def fileReader():
 
 
 if __name__ == '__main__':
-    fileReader()
+    filePath = raw_input('请输入一个文件名或者文件地址:\n')
+    fileReader(filePath)
