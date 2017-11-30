@@ -13,14 +13,14 @@
 import platform  # 确定当前操作系统
 
 sys = platform.system()
-# print sys
+print sys
 if sys == 'Windows':
     pass
 
 elif sys == 'Linux':
     pass
 
-elif sys == 'MacOS':
+elif sys == 'Darwin':
     pass
 
-print dir(sys)
+# print dir(sys)
