@@ -28,4 +28,4 @@ def get_mod_functions(pyPath):
 import sys
 
 for i in sys.path:
-    print  i
+    print i
