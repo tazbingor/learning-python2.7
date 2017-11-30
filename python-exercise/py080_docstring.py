@@ -11,21 +11,30 @@
 你的程序执行完毕后,应该会生成一个漂亮的清单.里面列出哪些模块有文档字符串,以及文档字符串的内容,清单最后附上哪些没有文档字符串模块的名字
 附加题:提取标准库中各个模块内的全部class和函数的文档
 '''
+import os
+import sys
 
 
 def get_doc_library(pyPath):
-    pass
+    f = open(r'chcekdoclists.txt', 'w')
+    f.write('__doc__ in there files:nnn')
+    temp = []
+    for filename in os.walk(pyPath):
+        for files in filename:
+            if '__doc__' in files:
+                f.write(files, ' : ', files.__doc__, 'nnn')
+            else:
+                temp.append(files)
 
+    f.write('__doc__ not in there files:nnn')
+    for i in temp:
+        f.write(i + 'nnn')
+
+    f.close()
 
 def get_mod_class(pyPath):
     pass
 
-
 def get_mod_functions(pyPath):
     pass
 
-
-import sys
-
-for i in sys.path:
-    print i
