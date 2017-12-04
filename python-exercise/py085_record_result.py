@@ -34,13 +34,13 @@ opts = ['+', '-', '*', '/', '^', '%']
 
 # 计算函数
 def num_calculator(num1, num2, opt):
-    print num1, ',', num2, ',', opt
-    print len(num1), ':', type(num1)
-    print len(num2), ':', type(num2)
-    print len(opt), ':', type(opt)
-    print num1 + opt + num2
-    print eval(num1 + opt + num2)
-    print 3^3
+    # print num1, ',', num2, ',', opt
+    # print len(num1), ':', type(num1)
+    # print len(num2), ':', type(num2)
+    # print len(opt), ':', type(opt)
+    # print num1 + opt + num2
+    # print eval(num1 + opt + num2)
+    # print 3^3
     return eval(str(num1).strip() + str(opt) + str(num2).strip())
 
 
@@ -54,7 +54,6 @@ def get_result(user_str):
     string = str(user_str[get_index(user_str, '.py'):]).replace(' ', '')
     num1 = 0
     opt = ''
-    print string
     num2 = 0
     for i in range(len(string)):
         for j in range(len(opts)):
@@ -66,18 +65,21 @@ def get_result(user_str):
                 return num_calculator(num1, num2, opt)
 
 
+opts = ['+', '-', '*', '/', '^', '%']
+
 if __name__ == '__main__':
 
     count = 0  # 操作标记
 
-    while True:
-        user_input = raw_input("命令行计算器,请输入计算的条目(如 calc.py 1 + 2,则显示3):\n")
-        user_str = user_input.strip()
-        file_path = user_str[:get_index(user_str, '.py')]
-        code = user_str[get_index(user_str, '.py'):]
-        # 写入操作和结果至文件中
-        file1 = open(file_path, 'w')
+    user_input = raw_input("命令行计算器,请输入计算的条目(如 calc.py 1 + 2,则显示3):\n")
+    user_str = user_input.strip()
+    file_path = user_str[:get_index(user_str, '.py')]
+    file1 = open(file_path, 'w')
 
+    code = user_str[get_index(user_str, '.py'):]
+    # 写入操作和结果至文件中
+
+    while True:
         if code.strip() == 'print':
             # print code
             print file1.readlines()
@@ -97,4 +99,5 @@ if __name__ == '__main__':
             count = 0
             # 并输出
             print result
-            # file1.close()
+
+    file1.close()
