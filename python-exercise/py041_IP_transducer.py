@@ -3,7 +3,7 @@
 # @Time    : 17/11/16 下午11:20
 # @Author  : Aries
 # @Site    : 
-# @File    : py041_ IP_transducer.py
+# @File    : py041_IP_transducer.py
 # @Software: PyCharm
 '''
  IP transducer
