@@ -3,7 +3,7 @@
 # @Time    : 17/12/6 下午6:45
 # @Author  : Aries
 # @Site    : 
-# @File    : py096_ dekompresor.py
+# @File    : py096_dekompresor.py
 # @Software: PyCharm
 '''
 9–25. 通用解压程序.
