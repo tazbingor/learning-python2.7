@@ -16,20 +16,19 @@
 '''
 import random
 
-
+# 搜索文件中文字出现的次数
 def search_files(file_name, bt_number):
     f = open(file_name, 'r')
     lines = f.readlines()
     value = chr(bt_number)
-    # print lines
-    # print value
+
     f.close()
     return sum([value.count(line) for line in ''.join(lines)])
 
 
+# 创建文件
 def create_file(bt_num, count, length_bt):
     user_input = raw_input('请输入文件名:\n')
-
     f = open(user_input, 'w')
     str_file = getBtList(bt_num, search_files(user_input, 112), length_bt - count)
 
