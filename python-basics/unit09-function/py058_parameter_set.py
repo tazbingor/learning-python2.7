@@ -37,3 +37,7 @@ if __name__ == '__main__':
     list4 = test(1, 2, 3, '4', '5')
     for i in list4:
         print i, ':', type(i)
+    print '-' * 50
+    list5 = test(1, 2, 3, a='4', b='5')
+    for i in list5:
+        print i, ':', type(i)
