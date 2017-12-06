@@ -3,7 +3,7 @@
 # @Time    : 17/12/6 下午8:31
 # @Author  : Aries
 # @Site    : 
-# @File    : py061_built-in_function.py
+# @File    : py999_built-in_function.py
 # @Software: PyCharm
 '''
 内部函数
