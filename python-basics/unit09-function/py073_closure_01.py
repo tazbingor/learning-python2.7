@@ -3,7 +3,7 @@
 # @Time    : 17/12/7 下午8:28
 # @Author  : Aries
 # @Site    : 
-# @File    : py073_closure.py
+# @File    : py073_closure_01.py
 # @Software: PyCharm
 '''
 闭包
