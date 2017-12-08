@@ -17,5 +17,9 @@ def printf(log, *args):
     print log % args
 
 
-if __name__ == '__main__':
+def main():
     printf('%s', 'Python')  # Python
+
+
+if __name__ == '__main__':
+    main()

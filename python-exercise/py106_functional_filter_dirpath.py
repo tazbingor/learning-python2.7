@@ -14,10 +14,13 @@ files = filter(lambda x: x and x[0] != '.', os.listdir(folder))
 import os
 
 # 假设folder是path
-folder = 'rising-python-classics/python-algorithms'
+FOLDER = 'rising-python-classics/python-algorithms'
 
-if __name__ == '__main__':
-    files = filter(lambda x: x and x[0] != '.', os.listdir(folder))
+
+def main():
+    files = filter(lambda x: x and x[0] != '.', os.listdir(FOLDER))
     print files  # 返回的是当前文件夹(路径)下的所有文件的列表
 
 
+if __name__ == '__main__':
+    main()

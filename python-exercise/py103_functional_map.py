@@ -15,9 +15,13 @@ newdict = lambda list1, list2: map(None, list1, list2)
 
 newzip = lambda list1, list2: zip(list1, list2)
 
-if __name__ == '__main__':
+
+def main():
     list1 = [1, 2, 3]
     list2 = ['abc', 'def', 'ghi']
     print newdict(list1, list2)  # [(1, 'abc'), (2, 'def'), (3, 'ghi')]
-
     print newzip(list1, list2)  # [(1, 'abc'), (2, 'def'), (3, 'ghi')]
+
+
+if __name__ == '__main__':
+    main()

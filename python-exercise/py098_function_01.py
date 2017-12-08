@@ -19,6 +19,11 @@ def numAdd(a, b):
 # 函数式
 num_add = lambda x, y: x + y
 
-if __name__ == '__main__':
+
+def main():
     print '一般函数,', numAdd(1, 2)  # 3
     print '函数式,', num_add(1, 2)  # 3
+
+
+if __name__ == '__main__':
+    main()

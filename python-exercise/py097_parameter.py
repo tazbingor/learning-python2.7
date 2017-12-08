@@ -44,7 +44,7 @@ def countToFour3(n=1):
         print eachNum
 
 
-if __name__ == '__main__':
+def main():
     # 2
     # countToFour1(2)  # TypeError: countToFour1() takes no arguments (1 given)
     countToFour2(2)
@@ -61,3 +61,7 @@ if __name__ == '__main__':
     # countToFour1(5)  # TypeError: countToFour1() takes no arguments (1 given)
     countToFour2(5)
     countToFour3(5)
+
+
+if __name__ == '__main__':
+    main()

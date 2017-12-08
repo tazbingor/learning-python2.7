@@ -16,6 +16,10 @@ def getTime(min):
     return '%sh:%sm' % (min / 60, min % 60)
 
 
-if __name__ == '__main__':
+def main():
     print getTime(280)
     print getTime(180)
+
+
+if __name__ == '__main__':
+    main()

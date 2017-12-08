@@ -30,7 +30,12 @@ def isLeapYear(year):
 
 leap_year_list = lambda years: [i for i in filter(isLeapYear, years)]
 
-if __name__ == '__main__':
+
+def main():
     years = [year for year in range(1000, 2018)]
     print isLeapYear(1000)
     print leap_year_list(leap_year_list(years))
+
+
+if __name__ == '__main__':
+    main()

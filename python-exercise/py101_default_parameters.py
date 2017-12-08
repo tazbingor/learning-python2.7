@@ -16,6 +16,10 @@ def business_tax(pureprice, rate=0.10):
     return pureprice * rate
 
 
-if __name__ == '__main__':
+def main():
     print '计算明朝商业税'
     print business_tax(300)
+
+
+if __name__ == '__main__':
+    main()

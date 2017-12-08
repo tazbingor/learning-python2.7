@@ -52,7 +52,7 @@ def myMin(*alist):
     return res
 
 
-if __name__ == '__main__':
+def main():
     # a
     print max2(4, 8)  # 8
     print max_2(4, 8)  # 8
@@ -66,3 +66,7 @@ if __name__ == '__main__':
     print myMin(2, 1, 8, 9, 11)  # 1
     print myMin('JS', 'Java', 'golang', 'c', 'python')  # Java
     print '-' * 50
+
+
+if __name__ == '__main__':
+    main()
