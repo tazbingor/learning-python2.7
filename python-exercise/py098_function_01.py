@@ -3,7 +3,7 @@
 # @Time    : 17/12/8 下午3:43
 # @Author  : Aries
 # @Site    : 
-# @File    : py098_function.py
+# @File    : py098_function_01.py
 # @Software: PyCharm
 '''
 11-2 函数。结合你对练习5-2的解，以便你创建一个带一对相同数字并同时返回它们之和以及产物的结合函数。
