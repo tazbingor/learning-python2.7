@@ -13,3 +13,35 @@ timeit()会带一个函数对象（和参数一起）以及计算出用了多少
 （一般的共识是在POSIX 上用time.time()，在win32 系统上用time.clock()）
 注意：timeit()函数与timeit 模块不相关(在python2.3 中引入）
 '''
+
+import time
+
+
+def timeit(func, *nkwargs, **kwargs):
+    # type: (function, object, object) -> object
+    try:
+        start = time.clock()
+        retval = func(*nkwargs, **kwargs)
+        end = time.clock()
+        result = (True, retval, end - start)
+    except Exception, diag:
+        result = (False, str(diag))
+    return result
+
+
+def main():
+    funcs = (int, long, float)
+    vals = (1234, 12.34, '1234', '12.34')
+    for eachFunc in funcs:
+        print '-' * 80
+        for eachVal in vals:
+            retval = timeit(eachFunc, eachVal)
+            if retval[0]:
+                print '%s(%s)=' % (eachFunc.__name__, eachVal), retval[1],
+                print 'this func cost %s secs' % retval[2]
+            else:
+                print '%s(%s)=FAILED: ' % (eachFunc.__name__, eachVal), retval[1]
+
+
+if __name__ == '__main__':
+    main()
