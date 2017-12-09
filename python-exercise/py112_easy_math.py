@@ -28,15 +28,15 @@ MAXTRIES = 2
 def doprob():
     op = choice('+-*/')
     nums = [randint(1, 10) for i in range(2)]
-    if op != '/':
-        ans = OPERATIONS[op](*nums)
-    else:
-        if nums[0] < nums[1]:
-            nums.sort(reverse=True)
-        ans = OPERATIONS[op](*nums)
+    if nums[0] < nums[1]:
+        nums.sort(reverse=True)
+    ans = OPERATIONS[op](*nums)
     pr = '%d %s %d=' % (nums[0], op, nums[1])
-    oops = 0
+    showCalcPhase(ans, pr)
 
+
+def showCalcPhase(ans, pr):
+    oops = 0
     while True:
         try:
             if int(raw_input(pr)) == ans:
