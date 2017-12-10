@@ -13,19 +13,10 @@
 '''
 
 
-# 一般func
 def isLeapYear(year):
-    if year % 4 == 0:
-        if year % 100 == 0:
-
-            if year % 400 == 0:  # 世纪年闰年
-                return True
-            else:
-                return False
-        else:
-            return True
-    else:
-        return False
+    if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+        return True
+    return False
 
 
 leap_year_list = lambda years: [i for i in filter(isLeapYear, years)]

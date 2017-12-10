@@ -20,8 +20,7 @@
 def max2(x, y):
     if x > y:
         return x
-    else:
-        return y
+    return y
 
 
 max_2 = lambda x, y: x if x > y else y
@@ -30,8 +29,7 @@ max_2 = lambda x, y: x if x > y else y
 def min2(x, y):
     if x < y:
         return x
-    else:
-        return y
+    return y
 
 
 min_2 = lambda x, y: x if x < y else y
