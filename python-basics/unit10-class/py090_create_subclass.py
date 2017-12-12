@@ -17,10 +17,10 @@ class MyClass(object):
         self.age = age
 
 
-class MyNewClass(object):
+class MyNewClass(MyClass):  # 继承父类
     def __init__(self, name, age, ID, native_place):
         MyClass.__init__(self, name, age)
-        self.ID = ID
+        self.newID = ID
         self.native_place = native_place
 
     def get_place(self, np):
@@ -28,4 +28,7 @@ class MyNewClass(object):
 
 
 if __name__ == '__main__':
-    pass
+    place = MyNewClass('xb', 24, 65, 'wuhan')
+    print place.native_place
+    place.get_place('beijing')
+    print place.native_place
