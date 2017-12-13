@@ -19,18 +19,19 @@ class MyClass(object):
 
 
 class MyClass01(object):
-    def __init__(self, a, b):
-        self.a = a
-        self.b = b
+    def __init__(self):
+        print '__init__先调用'
 
-
+    # new 先于init执行
     def __new__(cls, *args, **kwargs):
-        pass
+        print '__new__先调用'
 
     def __del__(self):
-        pass
+        print '__del__先调用'
 
 
 if __name__ == '__main__':
     mc = MyClass()
     mc.show_class()  # this is 'MyClass'
+    print '-' * 50
+    mc1 = MyClass01()  # __new__先调用
