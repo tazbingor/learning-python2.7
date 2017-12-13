@@ -8,12 +8,27 @@
 '''
 实例
     通过调用类来创建实例
+
+
 '''
 
 
 class MyClass(object):
     def show_class(self):
         print 'this is \'MyClass\''
+
+
+class MyClass01(object):
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+
+    def __new__(cls, *args, **kwargs):
+        pass
+
+    def __del__(self):
+        pass
 
 
 if __name__ == '__main__':
