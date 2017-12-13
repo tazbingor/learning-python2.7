@@ -7,17 +7,15 @@
 # @Software: PyCharm
 '''
 实例
+    通过调用类来创建实例
 '''
 
 
-def func():
-    pass
-
-
-class Main():
-    def __init__(self):
-        pass
+class MyClass(object):
+    def show_class(self):
+        print 'this is \'MyClass\''
 
 
 if __name__ == '__main__':
-    pass
+    mc = MyClass()
+    mc.show_class()  # this is 'MyClass'
