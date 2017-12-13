@@ -12,6 +12,9 @@
   这种行为叫做绑定，方法必须绑定在一个实例上
 
 决定类的属性
+    __name__
+    __dict__
+
 
 '''
 
@@ -44,12 +47,11 @@ if __name__ == '__main__':
 
     # 使用dir和__dict__查看类的属性
     print dir(MyClass01)
-    print '-'* 50
+    print '-' * 50
     print MyClass01.__dict__
     # 其他特殊属性
-    print MyClass01.__name__ # MyClass01
-    print MyClass01.__doc__ # None
-    print MyClass01.__bases__ # (<type 'object'>,)
-    print MyClass01.__module__ # __main__
-    print MyClass01.__class__ # <type 'type'>
-
+    print MyClass01.__name__  # MyClass01
+    print MyClass01.__doc__  # None
+    print MyClass01.__bases__  # (<type 'object'>,)
+    print MyClass01.__module__  # __main__
+    print MyClass01.__class__  # <type 'type'>
