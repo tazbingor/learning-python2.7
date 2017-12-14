@@ -24,4 +24,13 @@ class HotelRoomCalc(object):
 
 if __name__ == '__main__':
     sfo = HotelRoomCalc(299)
-    print sfo.calcTotal()
+    print sfo.calcTotal()  # 354.31
+    print sfo.calcTotal(2)  # 708.62
+
+    sea = HotelRoomCalc(189, 0.086, 0.058)
+    print sea.calcTotal()  # 216.22
+    print sea.calcTotal(4)  # 864.88
+
+    waswkday = HotelRoomCalc(169, 0.045, 0.02)  # 新实例
+    waswkEnd = HotelRoomCalc(119, 0.045, 0.02)  # 新实例
+    print waswkday.calcTotal(5) + waswkEnd.calcTotal()  # 七天的租金 1026.63
