@@ -31,6 +31,10 @@ if __name__ == '__main__':
     print v1.version
     # 直接通过类访问
     print Test.version  # 1.2
+    print id(v1.version)
+    print id(v.version)
+    print id(Test.version)
+
     print'-' * 50
 
     # 通过类,也只能通过类来更新数据
@@ -38,6 +42,9 @@ if __name__ == '__main__':
     print v.version  # 被改变
     print Test.version
     print v1.version
+    print id(v1.version)
+    print id(v.version)
+    print id(Test.version)
     print'-' * 50
 
     # 改变v的类属性值
@@ -45,3 +52,6 @@ if __name__ == '__main__':
     print v.version  # 3.2
     print Test.version  # 2.2
     print v1.version  # 2.2
+    print id(v1.version)
+    print id(v.version)
+    print id(Test.version)
