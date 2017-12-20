@@ -11,12 +11,12 @@
 
 
 # 简单的属性查找
-class P1:
+class P1:  # (object):
     def foo(self):
         print 'p1 - foo()'
 
 
-class P2:
+class P2:  # (object):
     def foo(self):
         print 'p2 - foo()'
 
@@ -35,3 +35,26 @@ class C2(P1, P2):
 
 class GC(C1, C2):
     pass
+
+
+def classics():
+    gc = GC()
+    gc.foo()
+    gc.bar()
+
+
+def new_class():
+    gc = GC()
+    gc.foo()
+    gc.bar()
+
+
+if __name__ == '__main__':
+    '''使用经典类'''
+    classics()
+    print'-' * 50
+
+    '''使用新式类'''
+    new_class()
+
+    # P2.__mro__
