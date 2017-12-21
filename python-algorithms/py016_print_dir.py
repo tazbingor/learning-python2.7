@@ -3,7 +3,7 @@
 # @Time    : 17/12/8 下午12:24
 # @Author  : Aries
 # @Site    : 
-# @File    : py016_print_dir.py.py
+# @File    : py016_print_dir.py
 # @Software: PyCharm
 '''
 递归:打印指定目录下的所有文件(目录)

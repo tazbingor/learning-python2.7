@@ -3,7 +3,7 @@
 # @Time    : 17/12/6 下午6:37
 # @Author  : Aries
 # @Site    : 
-# @File    : py093_lszip.py.py
+# @File    : py093_lszip.py
 # @Software: PyCharm
 '''
 9–22. ZIP 归档文件.

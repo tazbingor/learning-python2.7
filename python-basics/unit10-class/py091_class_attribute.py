@@ -3,7 +3,7 @@
 # @Time    : 2017/12/13 下午 09:59
 # @Author  : Aries
 # @Site    : 
-# @File    : py091_class_attribute.py.py
+# @File    : py091_class_attribute.py
 # @Software: PyCharm
 
 '''
