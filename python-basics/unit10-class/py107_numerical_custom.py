@@ -8,6 +8,8 @@
 '''
 数值定制
 '''
+
+
 class Time60(object):
     def __init__(self, hr, min):
         self.hr = hr
