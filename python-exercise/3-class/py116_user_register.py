@@ -15,11 +15,60 @@
 '''
 
 
-# 简要的数据管理
+# 数据管理类
 class DBManagement(object):
-    def __init__(self, username, password):
-        self.name = username
-        self.pwd = password
+    def __init__(self, username='admin', password='admin'):
+        self.user_db = {}
+        self.user_db[username] = password
 
-    def update_password(self, newpwd):
-        self.pwd = newpwd
+    def update_password(self, username, newpwd):
+        self.user_db[username] = newpwd
+
+
+# 用户登录类
+class UserLoginAndRegister(object):
+    def __init__(self):
+        self.db_manage = DBManagement()
+
+    def register(self):
+        prompt = 'login desired:\n'
+        while True:
+            name = raw_input(prompt)
+            if self.db_manage.user_db.has_key(name):
+                prompt = 'name taken, try another: '
+                continue
+            else:
+                break
+
+        pwd = raw_input('password:\n')
+        self.db_manage.user_db[name] = pwd
+
+    def login(self):
+        name = raw_input('login:\n')
+        pwd = raw_input('password:\n')
+        password = self.db_manage.user_db.get(name)
+        if password == pwd and \
+                self.db_manage.user_db.has_key(name):
+            print 'welcome back', name
+        else:
+            print 'login incorrect'
+
+    def show_users(self):
+        for each_item in self.db_manage.user_db:
+            print 'username:', each_item, \
+                ',pwd:', self.db_manage.user_db[each_item]
+
+    def change_password(self):
+        username = raw_input('Please enter the username')
+        newpwd = raw_input('Please enter a new password')
+        self.db_manage.user_db[username] = newpwd
+
+
+if __name__ == '__main__':
+    user = UserLoginAndRegister()
+    user.register()
+    user.login()
+    user.show_users()
+    user.change_password()
+    user.login()
+    user.show_users()
