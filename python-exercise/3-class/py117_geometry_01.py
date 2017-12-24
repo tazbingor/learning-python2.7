@@ -3,10 +3,11 @@
 # @Time    : 17/12/24 上午11:17
 # @Author  : Aries
 # @Site    : 
-# @File    : py117_coordinates.py
+# @File    : py117_geometry_01.py
 # @Software: PyCharm
 '''
-几何。建立一个由有序数值对（x，y）组成的Point类，它代表某个点的X坐标和Y坐标。
+13-5 几何。
+建立一个由有序数值对（x，y）组成的Point类，它代表某个点的X坐标和Y坐标。
 X坐标和Y坐标在实例时被传递给构造器，如果没有给出他们的值，则默认为坐标的原点。
 '''
 
