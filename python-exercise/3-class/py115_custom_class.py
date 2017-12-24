@@ -31,5 +31,57 @@ dollarize()一样的字符格式显示该值。
 
 
 class MoneyFmt(object):
-    pass
+    def __init__(self, value=0.0):
+        self.__data_init(value)
 
+    def update(self, value=None):
+        if value != None:
+            self.__data_init(value)
+        else:
+            print 'Value has not been updated.'
+
+    def __data_init(self, value=0.0):
+        self.money = float(value)
+        self.round_money = round(self.money, 2)
+        self.str_money = str(self.round_money)
+        self.dollar = self.str_money.split('.')[0]
+        self.cent = self.str_money.split('.')[1]
+
+    # __repr__ = __str__
+
+    def dollarize(self):
+        abs_money = abs(self.round_money)
+        temp_dollar = '{:,}'.format(abs_money)
+        str_dollar = ''.join(('$', temp_dollar))
+        if self.money > 0:
+            return str_dollar
+        else:
+            return '-' + str_dollar
+
+    def get_dollar(self):
+        return self.dollar
+
+    def get_cent(self):
+        return str('0.', self.cent)
+
+    def __nonzero__(self):
+        if self.money < 1:
+            return False
+        else:
+            return True
+
+    def __str__(self):
+        return self.dollarize()
+
+    def __repr__(self):
+        return self.money
+
+
+if __name__ == '__main__':
+    money_fmt = MoneyFmt(1234567.8901)
+    print money_fmt.dollarize()
+    print money_fmt
+    money_fmt.update(-0.3)
+    print money_fmt
+
+    print money_fmt.__nonzero__()  # False
