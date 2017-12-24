@@ -43,5 +43,6 @@ def showMenu():
     propert = ''
 
 
-newUser()
-oldUser()
+if __name__ == '__main__':
+    newUser()
+    oldUser()
