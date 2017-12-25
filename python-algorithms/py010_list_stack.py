@@ -39,7 +39,7 @@ def popit():
 
 # 压栈
 def pushit():
-    myListStack.append(raw_input('请输入你要添加的字符串:\n').strip())
+    myListStack.insert(0, raw_input('请输入你要添加的字符串:\n').strip())
 
 
 # 删除末尾元素
@@ -56,10 +56,10 @@ def myPop(str_List):
 def showStack():
     print myListStack
 
-
-print '-' * 50
-showStack()
-pushit()
-showStack()
-popit()
-showStack()
+if __name__ == '__main__':
+    print '-' * 50
+    showStack()
+    pushit()
+    showStack()
+    popit()
+    showStack()
