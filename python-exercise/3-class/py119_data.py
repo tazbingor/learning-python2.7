@@ -26,5 +26,45 @@ import time
 
 
 class MyTime(object):
-    def __init__(self):
-        pass
+    dispplay_tuple = (
+        '1,Mon DD, YYYY',
+        '2,MM/DD/YYYY',
+        '3,DD/MM/YY',
+        '4,DD/MM/YYYY',
+        '5,DD/MM/YYYY'
+    )
+
+    __dispplay_mode = {
+        'MDY': '%m-%d-%y',
+        'MDYY': '%m-%d-%y',
+        'DMY': '%d-%m-%y',
+        'DMYY': '%d-%m-%y',
+        'MODYY': '%b %d,%y'
+    }
+
+    def __init__(self, value=time.time()):
+        self.time_val = value
+        # self.display_mode = display_mode
+
+    def update(self, value=time.time()):
+        self.time_val = value
+        # self.display_mode = display_mode
+
+    def display(self, mode=dispplay_tuple[0]):
+        time_val = ''
+        if mode != self.dispplay_tuple[0]:
+            mt = time.localtime(self.time_val)
+            time_val = time.strftime(self.__dispplay_mode[mode], mt)
+        else:
+            time_val = time.ctime()
+
+        return time_val
+
+
+if __name__ == '__main__':
+    tm = MyTime()
+    for each in tm.dispplay_tuple:
+        print each
+    user_input = int(raw_input('请选择时间显示格式:\n'))
+
+    print tm.display(tm.dispplay_tuple[user_input - 1])
