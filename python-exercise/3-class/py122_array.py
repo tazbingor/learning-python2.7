@@ -19,13 +19,15 @@ class Array(object):
     def __init__(self, alist):
         self.array_list = list(alist)
 
-    def shift(self):
-        del self.array_list[0]
-
     def isempty(self):
-        if self.isempty():
+        if len(self.array_list) == 0:
+            return True
+        return False
+
+    def shift(self):
+        if not self.isempty():
             element = self.array_list[0]
-            del self.array_list
+            del self.array_list[0]
             return element
         else:
             raise Exception('该集合为空,不能执行此操作!')
@@ -37,9 +39,28 @@ class Array(object):
         self.array_list.append(element)
 
     def pop(self):
-        if self.isempty():
-            element = self.array_list[0]
-            del self.array_list
+        if not self.isempty():
+            index = len(self.array_list) - 1
+            element = self.array_list[index]
+            del self.array_list[index]
             return element
         else:
             raise Exception('该集合为空,不能执行此操作!')
+
+    def __str__(self):
+        return str(self.array_list)
+
+    __repr__ = __str__
+
+
+if __name__ == '__main__':
+    temp_list = [0, 1, 2, 3, 4, 5]
+    array = Array(temp_list)
+    array.push(6)
+    print array  # [0, 1, 2, 3, 4, 5, 6]
+
+    array.pop()
+    print array  # [0, 1, 2, 3, 4, 5]
+
+    array.unshift(7)
+    print array  # [7, 0, 1, 2, 3, 4, 5]
