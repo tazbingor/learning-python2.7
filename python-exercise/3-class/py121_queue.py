@@ -16,20 +16,20 @@
 
 
 class MyQueue(object):
-    def __int__(self, queue_list):
+    def __init__(self, queue_list):
         """
 
         :type queue_list: list
         """
-        self.queue_list = queue_list
+        self.queue_list = list(queue_list)
 
     def enqueue(self, element=None):
         self.queue_list.append(element)
 
     def dequeue(self):
-        if self.isempty():
+        if not self.isempty():
             element = self.queue_list[0]
-            del self.queue_list
+            del self.queue_list[0]
             return element
         else:
             raise Exception('该队列为空,不能执行此操作!')
@@ -49,3 +49,8 @@ if __name__ == '__main__':
     temp_list = [0, 1, 2, 3, 4, 5]
     queue = MyQueue(temp_list)
     print queue
+    print queue.dequeue()
+    print queue  # [1, 2, 3, 4, 5]
+
+    queue.enqueue(6)
+    print queue  # [1, 2, 3, 4, 5, 6]
