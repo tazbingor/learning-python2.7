@@ -19,13 +19,14 @@ class Array(object):
     def __init__(self, alist):
         self.array_list = list(alist)
 
-    def isempty(self):
+    def __isempty(self):
         if len(self.array_list) == 0:
             return True
         return False
 
     def shift(self):
-        if not self.isempty():
+        # if not self.__isempty():
+        if not self.array_list:
             element = self.array_list[0]
             del self.array_list[0]
             return element
@@ -39,7 +40,8 @@ class Array(object):
         self.array_list.append(element)
 
     def pop(self):
-        if not self.isempty():
+        # if not self.__isempty():
+        if not self.array_list:
             index = len(self.array_list) - 1
             element = self.array_list[index]
             del self.array_list[index]
