@@ -16,16 +16,28 @@
 
 
 class User(object):
-    pass
+    def __init__(self, name='Admin', id=0, **carts):
+        self.username = name
+        self.id = id
+        for (key, value) in carts.itervalues():
+            if hasattr(self, key):
+                setattr(self, key, value)
 
 
 class Item(object):
-    pass
+    def __init__(self, **kwargs):
+        for (key, value) in kwargs.itervalues():
+            if hasattr(self, key):
+                setattr(self, key, value)
 
 
 class Cart(object):
-    pass
+    def __init__(self, **kwargs):
+        for (key, value) in kwargs.itervalues():
+            if hasattr(self, key):
+                setattr(self, key, value)
 
 
 if __name__ == '__main__':
-    pass
+    user_01 = User('张三', 1)
+    user_02 = User('李四', 2)
