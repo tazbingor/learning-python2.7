@@ -22,5 +22,6 @@ if __name__ == '__main__':
 
 '''
 a.当方法key调用会报错(超出递归深度)
-b.此写法相当于递归,需要通过类继承dict,并同时使keys函数返回Test的映射(super(Test,self))
+b.因为重写了.keys方法， self.keys会首先调用子类的.keys方法，而子类的.keys方法中又调用了自己，形成了循环
+此写法相当于递归.如何修改:需要通过类继承dict,并同时使keys函数返回Test的映射(super(Test,self))
 '''
