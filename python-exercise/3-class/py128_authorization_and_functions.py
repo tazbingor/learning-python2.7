@@ -36,7 +36,7 @@ class CapOpen(object):
 
 if __name__ == '__main__':
     str_list = [
-        ' def __str__(self):',
+        'def __str__(self):',
         'return str(self.file)'
     ]
     capopen = CapOpen('test.txt', 'wb')
