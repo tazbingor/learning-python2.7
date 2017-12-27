@@ -14,17 +14,17 @@
 '''
 
 
-class message(object):
-    melib = []
+class Message(object):
+    _lib = []
 
     def make_msg(self, me, nameto, namefrom):
         index = 0
         me1 = me + '   from   ' + namefrom
         li = [me1, nameto, index]
-        self.melib.append(li)
+        self._lib.append(li)
 
     def check_msg(self, name):
-        for i in self.melib:
+        for i in self._lib:
             if i[1] == name and i[2] == 0:
                 print i[0]
                 i[2] = 1
@@ -59,20 +59,20 @@ class User(object):
     def __init__(self, name):
         self.name = name
         self.__user.append(name)
+        self.msg = Message()
 
     # 用户可以发送信息
     def send_msg(self, userto):
         if userto in self.__user:
             me = raw_input('message:')
-            mes = message()
+            mes = Message()
             mes.make_msg(me, userto, self.name)
         else:
             print 'no such user'
 
     # 用户接收信息
     def accepy_msg(self):
-        mes = message()
-        mes.check_msg(self.name)
+        self.msg.check_msg(self.name)
 
     # 创建房间
     def create_room(self, username, roomname):
