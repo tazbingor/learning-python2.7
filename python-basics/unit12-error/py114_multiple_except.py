@@ -29,4 +29,4 @@ if __name__ == '__main__':
 
     print safe_float(200)  # 200.0
 
-    print  safe_float(89.69)  # 89.69
+    print safe_float(89.69)  # 89.69

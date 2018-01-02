@@ -3,7 +3,7 @@
 # @Time    : 17/12/28 下午9:38
 # @Author  : Aries
 # @Site    : 
-# @File    : py112-try-except.py
+# @File    : py112_try_except.py
 # @Software: PyCharm
 '''
 try-except 语句
