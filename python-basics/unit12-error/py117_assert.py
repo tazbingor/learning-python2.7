@@ -3,7 +3,7 @@
 # @Time    : 18/1/2 下午8:06
 # @Author  : Aries
 # @Site    : 
-# @File    : py117_断言.py
+# @File    : py117_assert.py
 # @Software: PyCharm
 '''
 assert 断言
