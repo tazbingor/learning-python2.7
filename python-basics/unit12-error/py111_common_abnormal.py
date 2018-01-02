@@ -3,7 +3,7 @@
 # @Time    : 17/12/28 下午9:27
 # @Author  : Aries
 # @Site    : 
-# @File    : py111-common-abnormal.py
+# @File    : py111_common_abnormal.py
 # @Software: PyCharm
 '''
 python 中常见的异常
