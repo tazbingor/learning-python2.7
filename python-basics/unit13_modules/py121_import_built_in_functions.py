@@ -8,9 +8,10 @@
 '''
 模块内建函数
 __import__() 导入模块函数
+reload() 重新导入一个已经导入的模块
+
 globals() 返回全局名称空间的字典
 locals() 返回局部名称空间的字典
-
 '''
 
 
@@ -38,3 +39,7 @@ if __name__ == '__main__':
     foo()'s globals: ['__builtins__', '__file__', '__package__', 'sys', '__name__', 'foo', '__doc__']
     foo()'s locals:: ['anInt', 'string']
     '''
+    print'-' * 50
+    sys2 = reload(sys)  # <module 'sys' (built-in)>
+
+    print sys2
