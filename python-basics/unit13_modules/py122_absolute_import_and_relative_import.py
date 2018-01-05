@@ -3,10 +3,10 @@
 # @Time    : 18/1/5 下午11:26
 # @Author  : Aries
 # @Site    : 
-# @File    : py122_absolute_import.py
+# @File    : py122_absolute_import_and_relative_import.py
 # @Software: PyCharm
 '''
-绝对导入
+绝对导入 和 相对导入
 '''
 import sys
 
