@@ -3,7 +3,7 @@
 # @Time    : 18/1/6 下午9:03
 # @Author  : Aries
 # @Site    : 
-# @File    : py01_first_regex.py
+# @File    : py001_first_regex.py
 # @Software: PyCharm
 '''
 第一个正则表达式
