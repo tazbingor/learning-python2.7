@@ -19,9 +19,9 @@ if __name__ == '__main__':
 
 '''
 Traceback (most recent call last):
-  File "project/PycharmProjects/rising-python-classics/python-basics/unit12-error/py116_raise.py", line 18, in <module>
+  File "project/PycharmProjects/rising-python-classics/python-basics/unit11-error/py116_raise.py", line 18, in <module>
     thorw_error()
-  File "project/PycharmProjects/rising-python-classics/python-basics/unit12-error/py116_raise.py", line 14, in thorw_error
+  File "project/PycharmProjects/rising-python-classics/python-basics/unit11-error/py116_raise.py", line 14, in thorw_error
     raise Exception("抛出一个异常")
 Exception: 抛出一个异常
 '''
