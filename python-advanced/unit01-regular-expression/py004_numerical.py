@@ -27,6 +27,15 @@ def re_password(pwd):
         return None
 
 
+def re_email163(email):
+    re_string = r'[a-zA-Z0-9_]{4,20}@163.com'
+    try:
+        result = re.match(re_string, email)
+        return result.group()
+    except AttributeError:
+        return None
+
+
 if __name__ == '__main__':
     re_string = '[A-Z][a-z]'
     result = re.match(re_string, 'Py')
@@ -57,3 +66,6 @@ if __name__ == '__main__':
     # 需求,匹配9-18位的密码,可以是大小写英文字母,数字,下划线
     print re_password('123134')  # None
     print re_password('thisispwd')  # thisispwd
+
+    # 匹配出一个163的邮箱地址
+    print re_email163('pythonlist@163.com')  # pythonlist@163.com
