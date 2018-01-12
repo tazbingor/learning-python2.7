@@ -3,7 +3,7 @@
 # @Time    : 18/1/12 下午5:25
 # @Author  : Aries
 # @Site    : 
-# @File    : py148_match_name.py
+# @File    : py148_match_name_01.py
 # @Software: PyCharm
 '''
 15-2 匹配用空格分隔的任意一对单词,比如姓名
