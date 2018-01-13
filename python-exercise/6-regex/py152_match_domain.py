@@ -6,7 +6,7 @@
 # @File    : py152_match_domain.py
 # @Software: PyCharm
 '''
-15-6 匹配简单的url 以www. 开头,以.com结尾
+15-6 匹配简单的url 以www. 开头,以.com结尾的域名
 
 '''
 from re import match
