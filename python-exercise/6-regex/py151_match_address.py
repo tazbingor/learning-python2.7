@@ -15,10 +15,10 @@ from re import match
 
 def match_address(address=''):
     try:
-        return match(r'^', address).group()
+        return match(r'^(\d{4})$', address).group()
     except AttributeError:
         return None
 
 
 if __name__ == '__main__':
-    pass
+    print match_address('3120')  # 3120
