@@ -11,7 +11,7 @@
 '''
 from random import randrange, choice
 from string import lowercase
-from sys import maxint
+# from sys import maxint
 from time import ctime
 from os import linesep
 
