@@ -19,7 +19,7 @@ doms = ('com', 'edu', 'net', 'org', 'gov')
 
 
 def gendata():
-    string=''
+    string = ''
     f = open('redata.txt', 'w')
     for i in range(randrange(5, 10)):
         data_int = randrange(2 ** 32)  # pick date
@@ -32,7 +32,7 @@ def gendata():
         dn = time_change_str(longer)
 
         string = '%s::%s@%s.%s::%d-%d-%d' \
-             % (data_str, em, dn, choice(doms), data_int, shorter, longer)
+                 % (data_str, em, dn, choice(doms), data_int, shorter, longer)
         string += linesep
     f.write(string)
     f.close()
