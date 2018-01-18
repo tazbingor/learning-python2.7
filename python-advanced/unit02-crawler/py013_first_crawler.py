@@ -12,4 +12,4 @@ import urllib2
 
 response = urllib2.urlopen('https://www.bilibili.com/')
 html = response.read()
-print html  # 输出为B站的源码
+print html  # 输出为B站主页的源码
