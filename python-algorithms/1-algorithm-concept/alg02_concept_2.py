@@ -30,6 +30,10 @@ def get_combination():
     print 'finished'
 
 
+# def get_sum_plus(n):
+#     return n ** 3 * 2
+
+
 if __name__ == '__main__':
     get_combination()
     # a,b,c:0,500,500
