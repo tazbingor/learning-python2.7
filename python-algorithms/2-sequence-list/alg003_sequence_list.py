@@ -24,4 +24,5 @@ list基本实现
 
 
 class SequenceList(object):
+    # list()
     pass
