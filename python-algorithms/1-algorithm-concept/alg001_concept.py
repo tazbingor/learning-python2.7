@@ -3,7 +3,7 @@
 # @Time    : 18/1/20 下午11:49
 # @Author  : Aries
 # @Site    : 
-# @File    : alg01_concept.py
+# @File    : alg001_concept.py
 # @Software: PyCharm
 '''
 倘若a+b+c = 1000,且a^2+b^2=c^2 (a,b,c为自然数)

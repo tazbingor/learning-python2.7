@@ -3,7 +3,7 @@
 # @Time    : 18/1/20 下午11:58
 # @Author  : Aries
 # @Site    : 
-# @File    : alg02_concept_2.py
+# @File    : alg002_concept_2.py
 # @Software: PyCharm
 '''
 优化版
