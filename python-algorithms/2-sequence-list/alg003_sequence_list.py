@@ -5,6 +5,7 @@
 # @Site    : 
 # @File    : alg003_sequence_list.py
 # @Software: PyCharm
+
 '''
 顺序表:
     将元素有顺序的放在一块连续的存储区里,元素间的顺序关系由他们的存储顺序自然表示
@@ -26,3 +27,4 @@ list基本实现
 class SequenceList(object):
     # list()
     pass
+
