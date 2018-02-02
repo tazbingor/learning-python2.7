@@ -7,6 +7,8 @@
 # @Software: PyCharm
 '''
 创建子进程
+
+此代码在windows上无法运行,因为没有fork调用
 '''
 import os
 
